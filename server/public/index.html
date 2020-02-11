@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+ 
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/form.css">
+      <link rel="stylesheet" type="text/css" href="css/Game.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/phaser.js"></script>
+        <!-- <script type="text/javascript" src="js/phaser-input.js"></script> -->
+        <script type="text/javascript" src="js/boot.js"></script>
+        <script type="text/javascript" src="js/preload.js"></script>
+    	  <script type="text/javascript" src="js/avatarCreate.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    </head>
+ 
+    <body>
+
+<form class="wow fadeInUp" data-wow-delay=".5s">
+
+  <h1>Sign up</h1>
+
+  <div>
+    <label>Full Name</label><br>
+    <input type="text" name="name" placeholder="Enter your name">
+
+  </div>
+  <div><br>
+    <label>Student ID</label><br>
+    <input type="text" name="id" placeholder="ID No.">  
+  </div>
+  <div><br>
+    <label>Gender</label><br>
+    <input type="text" name="gender" placeholder="Gender">
+
+  </div><br>
+    <input type="submit" name="Save" onlclick="">
+</form>
+
+
+    	<script type="text/javascript">
+
+       new WOW().init();
+
+    		var config = {
+  			type: Phaser.CANVAS,
+  			parent: 'phaser-example',
+  			width: 900,
+  			height: 600,
+  			scale: {
+        		//we place it in the middle of the page.
+        		autoCenter: Phaser.Scale.CENTER_BOTH // for phaser 3
+    		}, 
+   			scene: [Boot,Preload,avatarCreate]
+			};
+
+			var game = new Phaser.Game(config);
+
+    	</script>
+    </body>
+ 
+</html>

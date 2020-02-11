@@ -1,19 +1,16 @@
 {
-  "name": "Teacher's Pet Inc",
+  "name": "TeachersPet",
   "version": "1.0.0",
-  "description": "node app ",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-  
-},
-  "repository": {
-  "type": "git",
-  "url": ""
-},
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-  "url": ""
-},
-  "homepage": ""
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
 }
