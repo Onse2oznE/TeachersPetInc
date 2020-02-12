@@ -66,3 +66,26 @@
 //   }
 //   });
 // }
+
+
+//ANOTHER WAY OF LOGGING IN
+
+// var con = mysql.createConnection({
+// 	host     : 'localhost',
+// 	user     : 'root',
+// 	password : '',
+// 	database : 'nodelogin'
+// });
+// var app = express();
+
+// app.use(session({
+// 	secret: 'secret',
+// 	resave: true,
+// 	saveUninitialized: true
+// }));
+// app.use(bodyParser.urlencoded({extended : true}));
+// app.use(bodyParser.json());
+
+// app.get('/', function(request, response) {
+// 	response.sendFile(path.join(__dirname + '/login.html'));
+// });
