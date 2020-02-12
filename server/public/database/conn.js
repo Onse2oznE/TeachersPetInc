@@ -1,2 +1,7 @@
-var sql = require('mysql');
+// const con = mysql.createConnection({
+//   host: '',
+//   user: '',
+//   password: '',
+//   database: ''
+// });
 
