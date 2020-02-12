@@ -13,7 +13,7 @@
 // 		"crte"	: cdate
 // 	}
 
-// 	con.query('INSER INTO student SET ?', student, function(error, results, fields) {
+// 	con.query('INSERT INTO student SET ?', student, function(error, results, fields) {
 // 		if(error) {
 // 			console.log("error occured", error);
 // 			res,sebd({
